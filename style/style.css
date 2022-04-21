@@ -279,6 +279,72 @@ header .button a:hover {
   color: black;
 }
 
+.section4 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .faq-title {
+  min-width: 300px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #ffedb0;
+}
+.section4 .faq-questions {
+  width: 100%;
+}
+.section4 .faq-questions .card-accordion {
+  max-width: 700px;
+  padding: 10px;
+  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.075), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.075);
+  border-radius: 15px;
+  margin: 30px;
+}
+.section4 .faq-questions .card-accordion .box-acccordion {
+  background-color: #292b29;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  transition: 0.5s;
+}
+.section4 .faq-questions .card-accordion .box-acccordion .undercard-accordion {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section4 .faq-questions .accordion-item-header {
+  color: #fff;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.section4 .faq-questions .accordion-item-body {
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #e7d69f;
+  border-radius: 10px;
+}
+.section4 .faq-questions .accordion-item-body-content {
+  padding: 1rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #ffedb0, transparent) 1;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
 footer {
   width: 100%;
   height: 400px;
