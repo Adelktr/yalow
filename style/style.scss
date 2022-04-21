@@ -59,97 +59,170 @@ header {
 }
 
 .content {
-  padding: 65px 100px;
+  padding: 80px 25px;
   svg {
     width: 100%;
     position: absolute;
     left: 0;
     z-index: -10;
   }
+  .section1 {
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title,
+    .subtitle {
+      min-width: 300px;
+      text-align: center;
+      color: #ffedb0;
+    }
+    .title {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    .subtitle {
+      width: 60%;
+      line-height: 25px;
+    }
+  }
   .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  flex-wrap: wrap;
-  padding: 40px 0;
-
-  .card {
-    position: relative;
-    min-width: 320px;
-    height: 340px;
-    box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.05),
-      inset -5px -5px 5px rgba(255, 255, 255, 0.075),
-      5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.075);
-    border-radius: 15px;
-    margin: 30px;
-   
-
-    .box {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      right: 20px;
-      bottom: 20px;
-      background-color: #292b29;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    .container-cards {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: 0.5s;
-      .undercard {
-        padding: 20px;
-        text-align: center;
+      width: 35%;
+      position: relative;
+      flex-direction: column;
+      padding-top: 75px;
+    }
 
-        h2 {
-          position: absolute;
-          top: -10px;
-          right: 30px;
-          font-size: 8em;
-          color: rgba(255, 255, 255, 0.103);
-          transition: 0.5s;
-          pointer-events: none;
+    .container-section {
+      right: 0;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .section2 {
+        width: 90%;
+        min-width: 350px;
+        margin-top: 100px;
+        margin-right: 150px;
+        .title {
+          min-width: 300px;
+          text-align: center;
+          font-size: 32px;
+          margin-bottom: 15px;
+          color: #ffedb0;
         }
-        h3 {
-          font-size: 1.8em;
-          color: #fff;
-          z-index: 1;
-          transition: 0.5s;
+        .frame {
+          width: 100%;
+          height: 375px;
+          background-color: #ffedb0;
+          margin-top: 50px;
         }
-        p {
-          font-size: 1em;
-          font-weight: 300;
-          color: #fff;
-          z-index: 1;
+        .description {
+          color: #ffedb0;
+          margin-top: 50px;
+          text-align: center;
         }
       }
     }
   }
-  .card:hover {
-    .imp{
-      transform: translateY(-50px);
-    }
-    .pai{
-      transform: translateY(50px);
-    }
-    .box {
-      
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
-      background: #e7d69f;
-      .undercard {
-        h2 {
-          color: rgba(0, 0, 0, 0.05);
-        }
-        h3 {
-          color: #fff;
-        }
-        p{
-           color: #fff;
-        }
+  .section3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
 
+.card1 {
+  top: 250px;
+  left: 0px;
+}
+
+.card2 {
+  top: 750px;
+  left: 0px;
+}
+.card3 {
+  top: 1250px;
+  left: 0px;
+}
+.card4 {
+  top: 1250px;
+  left: 500px;
+}
+
+.card {
+  width: 350px;
+  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.075),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.075);
+  border-radius: 15px;
+  margin: 30px;
+
+  .box {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #292b29;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    .undercard {
+      padding: 20px;
+      text-align: center;
+
+      h2 {
+        top: -10px;
+        right: 30px;
+        font-size: 8em;
+        color: rgba(255, 255, 255, 0.103);
+        pointer-events: none;
+      }
+      h3 {
+        font-size: 1.8em;
+        color: #fff;
+        z-index: 1;
+      }
+      p {
+        font-size: 1em;
+        font-weight: 300;
+        color: #fff;
+        z-index: 1;
       }
     }
   }
 }
+.card:hover {
+  .imp {
+    transform: translateY(-25px);
+  }
+  .pai {
+    transform: translateY(25px);
+  }
+  .box {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+    background: #e7d69f;
+    .undercard {
+      h2 {
+        color: rgba(0, 0, 0, 0.05);
+      }
+      h3 {
+        color: black;
+      }
+      p {
+        color: black;
+      }
+    }
+  }
 }

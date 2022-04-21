@@ -58,7 +58,7 @@ header .button a:hover {
 }
 
 .content {
-  padding: 65px 100px;
+  padding: 80px 25px;
 }
 .content svg {
   width: 100%;
@@ -66,24 +66,104 @@ header .button a:hover {
   left: 0;
   z-index: -10;
 }
+.content .section1 {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .section1 .title,
+.content .section1 .subtitle {
+  min-width: 300px;
+  text-align: center;
+  color: #ffedb0;
+}
+.content .section1 .title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.content .section1 .subtitle {
+  width: 60%;
+  line-height: 25px;
+}
 .content .container {
+  display: flex;
+  justify-content: space-between;
+}
+.content .container .container-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  flex-wrap: wrap;
-  padding: 40px 0;
-}
-.content .container .card {
+  width: 35%;
   position: relative;
-  min-width: 320px;
-  height: 340px;
+  flex-direction: column;
+  padding-top: 75px;
+}
+.content .container .container-section {
+  right: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .container .container-section .section2 {
+  width: 90%;
+  min-width: 350px;
+  margin-top: 100px;
+  margin-right: 150px;
+}
+.content .container .container-section .section2 .title {
+  min-width: 300px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #ffedb0;
+}
+.content .container .container-section .section2 .frame {
+  width: 100%;
+  height: 375px;
+  background-color: #ffedb0;
+  margin-top: 50px;
+}
+.content .container .container-section .section2 .description {
+  color: #ffedb0;
+  margin-top: 50px;
+  text-align: center;
+}
+.content .section3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.card1 {
+  top: 250px;
+  left: 0px;
+}
+
+.card2 {
+  top: 750px;
+  left: 0px;
+}
+
+.card3 {
+  top: 1250px;
+  left: 0px;
+}
+
+.card4 {
+  top: 1250px;
+  left: 500px;
+}
+
+.card {
+  width: 350px;
   box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.075), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.075);
   border-radius: 15px;
   margin: 30px;
 }
-.content .container .card .box {
-  position: absolute;
+.card .box {
   top: 20px;
   left: 20px;
   right: 20px;
@@ -96,49 +176,47 @@ header .button a:hover {
   align-items: center;
   transition: 0.5s;
 }
-.content .container .card .box .undercard {
+.card .box .undercard {
   padding: 20px;
   text-align: center;
 }
-.content .container .card .box .undercard h2 {
-  position: absolute;
+.card .box .undercard h2 {
   top: -10px;
   right: 30px;
   font-size: 8em;
   color: rgba(255, 255, 255, 0.103);
-  transition: 0.5s;
   pointer-events: none;
 }
-.content .container .card .box .undercard h3 {
+.card .box .undercard h3 {
   font-size: 1.8em;
   color: #fff;
   z-index: 1;
-  transition: 0.5s;
 }
-.content .container .card .box .undercard p {
+.card .box .undercard p {
   font-size: 1em;
   font-weight: 300;
   color: #fff;
   z-index: 1;
 }
-.content .container .card:hover .imp {
-  transform: translateY(-50px);
+
+.card:hover .imp {
+  transform: translateY(-25px);
 }
-.content .container .card:hover .pai {
-  transform: translateY(50px);
+.card:hover .pai {
+  transform: translateY(25px);
 }
-.content .container .card:hover .box {
+.card:hover .box {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
   background: #e7d69f;
 }
-.content .container .card:hover .box .undercard h2 {
+.card:hover .box .undercard h2 {
   color: rgba(0, 0, 0, 0.05);
 }
-.content .container .card:hover .box .undercard h3 {
-  color: #fff;
+.card:hover .box .undercard h3 {
+  color: black;
 }
-.content .container .card:hover .box .undercard p {
-  color: #fff;
+.card:hover .box .undercard p {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
