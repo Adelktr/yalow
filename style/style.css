@@ -136,6 +136,66 @@ header .button a:hover {
   width: 100%;
   justify-content: space-evenly;
 }
+.content .form-section {
+  width: 80%;
+  padding: 55px 50px;
+  background-color: #292b29;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 125px;
+  border-radius: 15px;
+}
+.content .form-section .title {
+  color: #ffedb0;
+  font-size: 24px;
+  text-align: center;
+}
+.content .form-section label {
+  color: #ffedb0;
+}
+.content .form-section input {
+  width: 100%;
+  height: 35px;
+  padding: 3px 5px;
+  margin-top: 15px;
+  outline: none;
+  border: 1px solid #ffedb0;
+  background-color: #3d3d3d;
+  color: white;
+}
+.content .form-section .submit-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.content .form-section .submit-container .submit {
+  width: 25%;
+  background-color: transparent;
+  padding: 7px 12px;
+  border: 1px solid #e7d69f;
+  color: #e7d69f;
+}
+.content .form-section .submit-container .submit:hover {
+  background-color: #e7d69f;
+  color: white;
+  cursor: pointer;
+}
+.content .form-section .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 35px;
+}
+.content .form-section .top div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.content .form-section .bottom {
+  margin-top: 25px;
+}
 
 .card1 {
   top: 250px;
