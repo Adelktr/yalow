@@ -153,7 +153,10 @@ header .button a:hover {
 .content .container .container-section .section2 .frame {
   width: 100%;
   height: 375px;
-  background-color: #ffedb0;
+  background-image: url(../assets/presentation.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 50px;
 }
 .content .container .container-section .section2 .description {
