@@ -408,12 +408,18 @@ header .button a:hover {
   border-radius: 10px;
 }
 .section4 .faq-questions .accordion-item-body-content {
+  color: black;
   padding: 1rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #ffedb0, transparent) 1;
   display: flex;
   flex-wrap: wrap;
   font-size: 18px;
+}
+.section4 .faq-questions .accordion-item-body-content p {
+  color: black;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 footer {
