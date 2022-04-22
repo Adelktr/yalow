@@ -59,16 +59,21 @@ header {
 }
 
 .content {
-  padding: 80px 25px;
+  padding: 80px 75px;
+  @media screen and (max-width: 1250px) {
+    padding: 80px 0px;
+  }
   svg {
     width: 100%;
     position: absolute;
     left: 0;
     z-index: -10;
     opacity: 0.8;
+    @media screen and (max-width: 1250px) {
+      display: none;
+    }
   }
   .section1 {
-    min-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,11 +95,17 @@ header {
   .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and(max-width: 1250px) {
+      justify-content: center;
+    }
+
     .container-cards {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 35%;
+      min-width: 350px;
       position: relative;
       flex-direction: column;
       padding-top: 75px;
@@ -102,16 +113,18 @@ header {
 
     .container-section {
       right: 0;
-      width: 50%;
+      width: 700px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media screen and(max-width: 1250px) {
+        width: 90%;
+      }
 
       .section2 {
         width: 90%;
-        min-width: 350px;
-        margin-top: 100px;
-        margin-right: 150px;
+        min-width: 50px;
+        margin: 100px 0;
         .title {
           min-width: 300px;
           text-align: center;
@@ -138,6 +151,7 @@ header {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .form-section {
     width: 80%;
@@ -226,6 +240,10 @@ header {
     5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.075);
   border-radius: 15px;
   margin: 30px;
+  @media screen and (max-width: 650px) {
+    margin: 30px 0;
+    width: 300px;
+  }
 
   .box {
     top: 20px;
