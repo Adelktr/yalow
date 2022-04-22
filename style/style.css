@@ -35,6 +35,11 @@ header .image img {
   width: 450px;
   top: 30vh;
 }
+@media screen and (max-width: 650px) {
+  header .image img {
+    width: 225px;
+  }
+}
 header .button {
   width: 100%;
   display: flex;
@@ -50,6 +55,11 @@ header .button a {
   border: 1px solid #e7d69f;
   color: #e7d69f;
   text-decoration: none;
+}
+@media screen and (max-width: 650px) {
+  header .button a {
+    top: 50vh;
+  }
 }
 header .button a:hover {
   background-color: #e7d69f;
