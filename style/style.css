@@ -128,7 +128,7 @@ header .button a:hover {
 }
 .content .container .container-section {
   right: 0;
-  width: 700px;
+  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
