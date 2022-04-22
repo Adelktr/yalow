@@ -181,6 +181,11 @@ header .button a:hover {
   margin-top: 125px;
   border-radius: 15px;
 }
+@media screen and (max-width: 800px) {
+  .content .form-section {
+    padding: 20px;
+  }
+}
 .content .form-section .title {
   color: #ffedb0;
   font-size: 24px;
@@ -206,7 +211,7 @@ header .button a:hover {
   margin-top: 25px;
 }
 .content .form-section .submit-container .submit {
-  width: 25%;
+  width: fit-content;
   background-color: transparent;
   padding: 7px 12px;
   border: 1px solid #e7d69f;
@@ -223,10 +228,22 @@ header .button a:hover {
   gap: 25px;
   margin-top: 35px;
 }
+@media screen and (max-width: 800px) {
+  .content .form-section .top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .content .form-section .top div {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .content .form-section .top div {
+    width: 100%;
+  }
 }
 .content .form-section .bottom {
   margin-top: 25px;
