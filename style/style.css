@@ -101,6 +101,7 @@ header .button a:hover {
 .content .section1 .title {
   font-size: 32px;
   margin-bottom: 15px;
+  padding: 0 25px;
 }
 .content .section1 .subtitle {
   width: 60%;
