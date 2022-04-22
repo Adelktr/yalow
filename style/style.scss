@@ -398,6 +398,7 @@ header {
       border-radius: 10px;
     }
     .accordion-item-body-content {
+      color: black;
       padding: 1rem;
       border-top: 1px solid;
       border-image: linear-gradient(to right, transparent, #ffedb0, transparent)
@@ -405,6 +406,11 @@ header {
       display: flex;
       flex-wrap: wrap;
       font-size: 18px;
+      p{
+        color: black;
+        font-size: 1em;
+        font-weight: 300;
+      }
     }
   }
 }
