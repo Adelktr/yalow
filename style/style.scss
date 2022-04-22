@@ -378,7 +378,7 @@ header {
 
     .accordion-item-header {
       color: #fff;
-      padding: 0.5rem 3rem 0.5rem 1rem;
+      padding: 0.5rem 1rem;
       min-height: 3.5rem;
       line-height: 1.25rem;
       font-weight: bold;
@@ -387,6 +387,11 @@ header {
       width: 100%;
       position: relative;
       cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 25px;
+      }
     }
 
     .accordion-item-body {
@@ -448,4 +453,13 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+.chevron-clicked {
+  transform: rotate(-180deg);
+  transition: 0.5s;
+}
+
+.chevron-down {
+  transition: 0.5s;
 }

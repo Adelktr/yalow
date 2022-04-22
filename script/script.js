@@ -1,9 +1,11 @@
 const accordionItemHeaders = document.querySelectorAll(
   ".accordion-item-header"
 );
+const chevrons = document.querySelectorAll(".chevron-down");
 
-accordionItemHeaders.forEach((accordionItemHeader) => {
+accordionItemHeaders.forEach((accordionItemHeader, index) => {
   accordionItemHeader.addEventListener("click", (event) => {
+    chevrons[index].classList.toggle("chevron-clicked");
     accordionItemHeader.classList.toggle("active");
     const accordionItemBody = accordionItemHeader.nextElementSibling;
     if (accordionItemHeader.classList.contains("active")) {
@@ -13,3 +15,5 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
+
+chevrons.forEach((el) => {});

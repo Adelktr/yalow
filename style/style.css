@@ -384,7 +384,7 @@ header .button a:hover {
 }
 .section4 .faq-questions .accordion-item-header {
   color: #fff;
-  padding: 0.5rem 3rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   min-height: 3.5rem;
   line-height: 1.25rem;
   font-weight: bold;
@@ -393,6 +393,11 @@ header .button a:hover {
   width: 100%;
   position: relative;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.section4 .faq-questions .accordion-item-header img {
+  width: 25px;
 }
 .section4 .faq-questions .accordion-item-body {
   color: #fff;
@@ -447,6 +452,15 @@ footer .reseaux img {
   height: 50px;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.chevron-clicked {
+  transform: rotate(-180deg);
+  transition: 0.5s;
+}
+
+.chevron-down {
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
